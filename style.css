@@ -1,0 +1,267 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+    color: hsl(238, 22%, 44%);
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+img {
+    max-width: 100%;
+}
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+.header {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+.header img {
+    width: 90px;
+}
+.nav ul {
+    display: flex;
+    gap: 2rem;
+}
+.header li a {
+    color: hsl(238, 22%, 44%);
+}
+.first {
+    text-align: center;
+}
+.first .left {
+    margin-top: 1.5rem;
+}
+.first .left p {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+.first .to-center {
+    margin: 0 auto;
+    margin-bottom: 0.7rem;
+    width: 100%;
+}
+.first input {
+    width: 90%;
+    padding: 0.5rem 0;
+}
+.first button {
+    padding: 0.5rem 0;
+    display: inline-block;
+    width: 90%;
+    background-color: hsl(224, 93%, 58%);
+    border: none;
+    border-radius: 0.2rem;
+    color: hsl(240, 75%, 98%);
+}
+.second {
+    margin-top: 4rem;
+    padding-top: 4rem;
+    background-image: url("./images/bg-curve-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.second-inner {
+    background-color: hsl(240, 75%, 98%);
+    padding-bottom: 4rem;
+}
+.second .back {
+    width: 100%;
+}
+.second .left {
+    margin-top: 4rem;
+}
+.second h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.second .par-two {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.link-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+.sec-link {
+    color: hsl(170, 45%, 43%);
+}
+.testimonial {
+    background-color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 8px 4px hsla(0, 0%, 75%, 0.5);
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    width: 85%;
+}
+.testimonial p{
+    margin: 0.7rem 0;
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+.profile img {
+    width: 2.5rem;
+    border-radius: 50%;
+    margin-right: 0.7rem;
+}
+.profile p span {
+    display: inline-block;
+    margin-bottom: 0.3rem;
+    color: hsl(243, 87%, 12%);
+    font-weight: 700;
+}
+.third {
+    background-color: hsl(238, 22%, 44%);
+    padding: 3rem 0;
+    text-align: center;
+    color: hsl(240, 75%, 98%);
+}
+.third p {
+    margin: 1rem 0;
+    color: hsl(240, 75%, 98%);
+}
+.third .to-center {
+    width: 100%;
+}
+.third input {
+    width: 60%;
+    margin-bottom: 0.3rem;
+    padding: 0.4rem 0;
+}
+.third button {
+    width: 60%;
+    background-color: hsl(224, 93%, 58%);
+    border: none;
+    padding: 0.5rem 0;
+    color: hsl(240, 75%, 98%);
+}
+.footer {
+    background-color: hsl(243, 87%, 12%);
+    padding: 3rem 0;
+    color: hsl(0, 0%, 75%);
+}
+.footer .logo {
+    width: 7rem;
+    color: hsl(0, 0%, 75%);
+}
+.footer li a {
+    color: hsl(0, 0%, 75%);
+}
+.footer p {
+    color: hsl(240, 75%, 98%);
+}
+.footer .contact, 
+.footer .about,
+.footer .contact-us {
+    margin-top: 2rem;
+}
+.footer .phone,
+.footer .email{
+    display: flex;
+    gap: 0.9rem;
+    margin-top: 0.8rem;
+}
+.footer .about li + li,
+.footer .contact-us li + li  {
+    margin-top: 0.8rem;
+}
+.footer .socials {
+    display: flex;
+    align-items: center;
+}
+.footer .socials img  + img{
+    width: 2.2rem;
+}
+.footer .socials .insta {
+    margin-left: 0.4rem;
+}
+
+@media (min-width:700px){
+    .first,
+    .second .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 10%;
+        text-align: left;
+    }
+    .first .to-center {
+        width: 60%;
+    }
+    .first .input-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .first input {
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+    .first button {
+        width: 40%;
+        padding: 0.65rem 0;
+    }
+    .second {
+        background-image: url("./images/bg-curve-desktop.svg");
+    }
+    .second h2 {
+        text-align: left;
+    }
+    .testimonial {
+        margin-left: 0;
+    }
+    .third {
+        text-align: left;
+    }
+    .third .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .third .left,
+    .third .right {
+        width: 40%;
+    }
+    .third input {
+        width: 100%;
+    }
+    .third .button {
+        width: 50%;
+        margin-left: 0;
+    }
+    .link-arrow {
+        justify-content: flex-start;
+    }
+    .footer .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer .about,
+    .footer .contact-us {
+        margin-top: 5rem;
+    }
+}
